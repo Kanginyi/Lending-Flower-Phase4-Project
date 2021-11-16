@@ -47,4 +47,4 @@ ActiveRecord::Schema.define(version: 2021_11_16_024451) do
   add_foreign_key "contracts", "lenders"
 end
 
-# serializers
+# HEY ARE WE GONNA NEED PASSWORD FOR LENDEES SO THAT THEY CAN LOG IN???
