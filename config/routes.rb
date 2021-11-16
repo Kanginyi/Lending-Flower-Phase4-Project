@@ -14,3 +14,5 @@ end
 # Contracts: show all contracts (index), show individual contracts (show), create new contracts (create), update existing contracts (update), delete contracts (destroy)
 # Lenders: show all lenders (index), show individual (shows)
 # Lendees: show your own information/contracts (show), create 
+
+# input form with dropdown menu, choose from whichever lender you want, hit the submit button and that contract card gets created onto the contract container

@@ -46,3 +46,5 @@ ActiveRecord::Schema.define(version: 2021_11_16_024451) do
   add_foreign_key "contracts", "lendees"
   add_foreign_key "contracts", "lenders"
 end
+
+# serializers
