@@ -1,4 +1,4 @@
-class Lender < ApplicationRecord
+class Lender < User
     has_many :contracts
     has_many :lendees, through: :contracts
 
