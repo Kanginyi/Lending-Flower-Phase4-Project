@@ -1,26 +1,44 @@
-import React from 'react';
-import GoldBackground from "../GoldBackground.mp4"
+import React, {useState} from 'react';
+import {useNavigate} from "react-router"
 
 function Login() {
+    let navigate = useNavigate();
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleInputChange = (e, field) => {
+        if (field === "username") {
+            setUsername(e.target.value);
+        } else {
+            setPassword(e.target.value);
+        }
+    }
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        fetch("/sessions", {
+            method: "POST",
+            headers: {"Content-Type": "application/json", accepts: "application/json"},
+            body: JSON.stringify({username: username, password: password})
+        })
+            .then(resp => resp.json())
+            .then(navigate("../", {replace: true}))
+    }
+
     return (
-        <div id="login-background">
-            <video
-                id="background-video"
-                src={GoldBackground}
-                loop
-                muted
-                autoPlay={true}
-            />
-            <h1 id="logo">Lending Breeze</h1>
+        <div>
+            <h1>Lending Breeze</h1>
 
       
             <form id="form-flex">
                 <span className="login-text-bold">Username:</span>
-                <input type="text" name="username" /><br/>
+                <input onChange={e => handleInputChange(e, "username")} type="text" name="username" /><br/>
                 <span className="login-text-bold">Password:</span>
-                <input type="password" name="password" />
+                <input onChange={e => handleInputChange(e, "password")} type="password" name="password" />
                 <br/>
-                <button>Login</button><br/>
+                <button onClick={handleLogin}>Login</button><br/>
                 <button>Signup</button>
             </form>
         </div>
