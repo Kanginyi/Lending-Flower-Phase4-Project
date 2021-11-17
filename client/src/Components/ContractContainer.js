@@ -14,7 +14,7 @@ function ContractContainer() {
             })
     }, [])
 
-    const showContracts = contractList.map(contract => <ContractCard key={contract.id} amount={contract.amount} description={contract.description} collateral={contract.collateral} duration={contract.duration} lender={contract.lender.name} lendee={contract.lendee.name} interest_rate={contract.lender.interest_rate}/>)
+    const showContracts = contractList?.map(contract => <ContractCard key={contract.id} amount={contract.amount} description={contract.description} collateral={contract.collateral} duration={contract.duration} lender={contract.lender.name} lendee={contract.lendee.name} interestRate={contract.lender.interest_rate}/>)
 
     return (
         <div>
