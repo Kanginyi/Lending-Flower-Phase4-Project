@@ -17,7 +17,7 @@ class LendeesController < ApplicationController
         lendee = Lendee.find_by(id: params[:id])
         if lendee
             lendee.destroy
-            render json: {message: "Lendee successfully destroyed"}, status: :no_content            
+            render json: {message: "Lendee successfully deleted"}, status: :no_content            
         else
             render json: {error: "Lendee not found"}, status: :not_found 
         end

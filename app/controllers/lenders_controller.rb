@@ -17,7 +17,7 @@ class LendersController < ApplicationController
         lender = Lender.find_by(id: params[:id])
         if lender
             lender.destroy
-            render json: {message: "Lender successfully destroyed"}, status: :no_content            
+            render json: {message: "Lender successfully deleted"}, status: :no_content            
         else
             render json: {error: "Lender not found"}, status: :not_found 
         end
