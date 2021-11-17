@@ -35,7 +35,7 @@ function Navbar() {
             </li>
     
             <li className="nav-item">
-            <a href="/" className="nav-link">
+            <a href="/login" className="nav-link">
                 <svg
                 aria-hidden="true"
                 focusable="false"
@@ -92,7 +92,7 @@ function Navbar() {
  
     
             <li className="nav-item">
-            <a href="/" className="nav-link">
+            <a href="/lenders" className="nav-link">
                 <svg
                 aria-hidden="true"
                 focusable="false"
