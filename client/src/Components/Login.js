@@ -13,7 +13,7 @@ function Login() {
             />
             <h1 id="logo">Lending Breeze</h1>
 
-
+      
             <form id="form-flex">
                 <span className="login-text-bold">Username:</span>
                 <input type="text" name="username" /><br/>
@@ -26,16 +26,5 @@ function Login() {
         </div>
     );
 }
-
-<div>
-<video
-    id="background-video"
-    src={GoldBackground}
-    loop
-    muted
-    autoPlay={true}
-/>
-<h1 id="logo">Lending Breeze</h1>
-</div>
 
 export default Login;
