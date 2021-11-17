@@ -4,15 +4,11 @@ Rails.application.routes.draw do
   resources :lendees
   resources :lenders
 
-  get "/cookie_click", to: "sessions#click"
+  # Login Session, Create is the login action, Destroy is the logout action
+  resources :sessions, only: [:create, :destroy]
 
-  # # Login session
-  # post "/login", to: "sessions#create"
-  # # Login action
-  # get "/me", to: "users#show"
-
-
-
+  # Users actions
+  resources :users
 
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
