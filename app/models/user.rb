@@ -1,7 +1,9 @@
 class User < ApplicationRecord
+    has_one :lendee
+
     validates :username, :password_digest, :session_token, presence: true
 
-    validates :username, uniqueness: true, length: { minimum: 8, maximum: 30 }
+    validates :username, uniqueness: true, length: { maximum: 30 }
 
     before_validation :ensure_session_token # This will create a session token if it doesn't already exist, private method further down
 
@@ -38,4 +40,5 @@ class User < ApplicationRecord
         end
         self.session_token # Return our new session token!
     end
+
 end
