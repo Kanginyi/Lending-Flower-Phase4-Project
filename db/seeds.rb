@@ -15,18 +15,33 @@ wells_closecome = Lender.create(name: "Wells Closecome", interest_rate: 52.9)
 silverman = Lender.create(name: "Silverman Sucks", interest_rate: 3.1)
 tt_bank = Lender.create(name: "TT Bank", interest_rate: 3.6)
 
+puts "Seeding Users"
+levin = User.create(username: "Levin Kutz", password: "password")
+shmeric = User.create(username: "Shmeric Shmee", password: "password")
+alan = User.create(username: "Alan Cinsavich", password: "password")
+xinyi = User.create(username: "ZjhinYeeeeeeee Yowzers", password: "password")
+samonella = User.create(username: "Samonella Toxic", password: "password")
+kwon = User.create(username: "Kwon DoNot", password: "password")
+dilshan = User.create(username: "Dilshan Mendes", password: "password")
+barley = User.create(username: "Barley Berald Bearminck", password: "password")
+paul = User.create(username: "Paul Daviddaughter", password: "password")
+cooke = User.create(username: "Sekneeyup Cooking", password: "password")
+omar = User.create(username: "Ramo Possums", password: "password")
+
+
 puts "Seeding Lendees 😎"
-levin = Lendee.create(name: "Levin Kutz", age: 35, credit_score: rand(600..800))
-shmeric = Lendee.create(name: "Shmeric Shmee", age: 26, credit_score: rand(600..800))
-alan = Lendee.create(name: "Alan Cinsavich", age: 32, credit_score: rand(600..800))
-xinyi = Lendee.create(name: "ZjhinYeeeeeeee Yowzers", age: 24, credit_score: rand(600..800))
-samonella = Lendee.create(name: "Samonella Toxic", age: 24, credit_score: rand(600..800))
-kwon = Lendee.create(name: "Kwon DoNot", age: 26, credit_score: rand(600..800))
-dilshan = Lendee.create(name: "Dilshan Mendes", age: 26, credit_score: rand(600..800))
-barley = Lendee.create(name: "Barley Berald Bearminck", age: 28, credit_score: rand(600..800))
-paul = Lendee.create(name: "Paul Daviddaughter", age: 39, credit_score: rand(600..800))
-cooke = Lendee.create(name: "Sekneeyup Cooking", age: 26, credit_score: rand(600..800))
-omar = Lendee.create(name: "Ramo Possums", age: 19, credit_score: rand(600..800))
+levin.create_lendee(name: "Levin Kutz", age: 35, credit_score: rand(600..800))
+shmeric.create_lendee(name: "Shmeric Shmee", age: 26, credit_score: rand(600..800))
+alan.create_lendee(name: "Alan Cinsavich", age: 32, credit_score: rand(600..800))
+xinyi.create_lendee(name: "ZjhinYeeeeeeee Yowzers", age: 24, credit_score: rand(600..800))
+samonella.create_lendee(name: "Samonella Toxic", age: 24, credit_score: rand(600..800))
+kwon.create_lendee(name: "Kwon DoNot", age: 26, credit_score: rand(600..800))
+dilshan.create_lendee(name: "Dilshan Mendes", age: 26, credit_score: rand(600..800))
+barley.create_lendee(name: "Barley Berald Bearminck", age: 28, credit_score: rand(600..800))
+paul.create_lendee(name: "Paul Daviddaughter", age: 39, credit_score: rand(600..800))
+cooke.create_lendee(name: "Sekneeyup Cooking", age: 26, credit_score: rand(600..800))
+omar.create_lendee(name: "Ramo Possums", age: 19, credit_score: rand(600..800))
+
 
 
 puts "Seeding Contracts 📃"

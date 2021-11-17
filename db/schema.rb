@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2021_11_17_050155) do
     t.string "name"
     t.integer "age"
     t.integer "credit_score"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
