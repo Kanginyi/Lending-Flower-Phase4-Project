@@ -122,7 +122,7 @@ function Navbar() {
             </li>
     
             <li className="nav-item">
-            <a href="/" className="nav-link">
+            <a href="/contracts" className="nav-link">
                 <svg
                 aria-hidden="true"
                 focusable="false"
@@ -146,7 +146,7 @@ function Navbar() {
                     ></path>
                 </g>
                 </svg>
-                <span className="link-text">What the FUCK</span>
+                <span className="link-text">Contracts</span>
             </a>
             </li>
    
