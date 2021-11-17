@@ -25,7 +25,7 @@ code {
 
 /* NAVBAR FUNCTIONALITY AND STYLING */
 /* Include this shit in the overall */
-main {
+#main {
   margin-left: 5rem;
   padding: 1rem;
 }
