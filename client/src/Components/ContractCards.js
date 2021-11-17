@@ -9,10 +9,11 @@ function ContractCard({
   lender,
   interestRate,
 }) {
+
   return (
-    <div class="contract-card">
-      <h3>Lender: {lender}</h3>
-      <h3>Lendee: {lendee}</h3>
+    <div className="contract-card">
+      <h3 className="contract-lender">Lender: {lender}</h3>
+      <h3 className="contract-lendee">Lendee: {lendee}</h3>
 
       <p>Amount: ${amount}</p>
       <p>Interest Rate: {interestRate}%</p>
@@ -25,5 +26,3 @@ function ContractCard({
 }
 
 export default ContractCard;
-
-//Do we need to interpolate some of the above details

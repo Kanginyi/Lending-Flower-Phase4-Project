@@ -27,7 +27,9 @@ function ContractContainer() {
     />
   ));
 
-  return <div>{showContracts}</div>;
+  return <div>
+          {showContracts}
+         </div>;
 }
 
 export default ContractContainer;
