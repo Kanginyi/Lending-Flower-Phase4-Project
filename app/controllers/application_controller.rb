@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::API
   include ActionController::Cookies
 
+  include ActionController::Helpers
+
   helper_method :current_user, :logged_in? # Is this person logged in or not? Checks if there's a session_token active right now
 
   private
