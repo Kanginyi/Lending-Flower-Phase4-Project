@@ -8,7 +8,6 @@
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -27,7 +26,7 @@ code {
 /* NAVBAR FUNCTIONALITY AND STYLING */
 /* Include this shit in the overall */
 #main {
-  margin-left: 5rem;
+  margin-left: 4rem;
   padding: 1rem;
 }
 
@@ -218,10 +217,31 @@ code {
   display: block;
 }
 
-/* Homepage */
+/* HOMEPAGE */
 #homepage {
   font-size: xx-large;
   text-align: center;
+}
+
+#homepage-welcome {
+  /* color: rgb(18, 122, 18); */ /* This one is a green color*/
+  color:rgb(23, 39, 134);
+  font-family: 'Cinzel', serif;
+  text-decoration: underline;
+}
+
+#homepage-slogan {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+}
+
+/* #homepage-paras-div {
+  border: 3px black double;
+  width: 700px;
+} */
+
+.homepage-paras {
+  font-size: 26px;
 }
 
 /* LOGIN FORM */
@@ -249,9 +269,9 @@ code {
 
 #background-video {
   width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 1;
   object-fit: cover;
 }
 
@@ -274,7 +294,7 @@ code {
     border: 1px solid black;
     margin: 10px;
     padding: 5px 5px 5px 10px;
-    height: 260px;
+    height: 290px;
     border-radius: 5px;
 }
 
