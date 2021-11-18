@@ -31,7 +31,6 @@ function Login() {
         <div>
             <h1>Lending Breeze</h1>
 
-      
             <form id="form-flex">
                 <span className="login-text-bold">Username:</span>
                 <input onChange={e => handleInputChange(e, "username")} type="text" name="username" /><br/>
