@@ -181,7 +181,7 @@ function Navbar() {
           </li>
 
           <li className="nav-item" id="themeButton">
-            <a href="/" className="nav-link">
+            <a href="/contact" className="nav-link">
               <svg
                 aria-hidden="true"
                 focusable="false"
