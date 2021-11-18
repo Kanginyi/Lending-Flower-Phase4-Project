@@ -421,6 +421,14 @@ section {
 
 .container .row100 .col .inputBox .text {
   position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
 }
 
 /* LENDERS PAGE */
