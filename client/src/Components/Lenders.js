@@ -13,18 +13,40 @@ function Lenders() {
             })
     }, [])
 
-    const showLenders = lendersData?.map(lender => {
-        return (<div>
-            <h3>{lender.name}</h3>
-            <h4>{lender.interest_rate}</h4>
-        </div>)
-        })
+    const jpMorgan = lendersData[0];
+    const canadia = lendersData[1];
+    const capitalTwo = lendersData[2];
+    const silverman = lendersData[3];
+    const ttBank = lendersData[4];
         
-
 
     return (
         <div>
-            {showLenders}
+            <div className="lender-card">
+                <h3>{jpMorgan?.name}</h3>
+                <h4>Current Interest Rate: {jpMorgan?.interest_rate}%</h4>
+                <p>Description: asdf</p>
+            </div>
+            <div className="lender-card">
+                <h3>{canadia?.name}</h3>
+                <h4>Current Interest Rate: {canadia?.interest_rate}%</h4>
+                <p>Description: asdf</p>
+            </div>
+            <div className="lender-card">
+                <h3>{capitalTwo?.name}</h3>
+                <h4>Current Interest Rate: {capitalTwo?.interest_rate}%</h4>
+                <p>Description: asdf</p>
+            </div>
+            <div className="lender-card">
+                <h3>{silverman?.name}</h3>
+                <h4>Current Interest Rate: {silverman?.interest_rate}%</h4>
+                <p>Description: asdf</p>
+            </div>
+            <div className="lender-card">
+                <h3>{ttBank?.name}</h3>
+                <h4>Current Interest Rate: {ttBank?.interest_rate}%</h4>
+                <p>Description: asdf</p>
+            </div>
         </div>
 
     );
