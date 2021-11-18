@@ -5,11 +5,10 @@ Rails.application.routes.draw do
   resources :lenders
 
   # Login Session, Create is the login action, Destroy is the logout action
-  resources :sessions, only: [:create, :destroy]
-
+  # resources :sessions, only: [:create, :destroy]
+  delete '/logout', to: 'sessions#destroy'
   # Users actions
   resources :users
-
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }

@@ -23,6 +23,7 @@ class ApplicationController < ActionController::API
   end
 
   def logout! # You're logging out
+    byebug
     current_user.reset_session_token! # Your session_token gets reset to a new one
     session[:session_token] = nil # Your session_token gets set to nil, essentially gets "erased"
     @current_user = nil # Now there will be no more @current_user, because you logged out dumbass
