@@ -1,23 +1,39 @@
 import React, { useState} from 'react'
 
+import React from 'react';
+
+function ContractForm() {
+    return (
+
+    );
+}
+
+export default ContractForm;
+
+
+
+
+
 function Contract Form({handlePost, errors}) {
   const ["", ""] = useState('')
   const ["", ""] = useState('')
   const ["", ""] = useState('')
  
+  // Lender, Lendee, amount, interest rate, duration, description, collateral
 
   function onSubmit(e){
     e.preventDefault()
     const new_contract = {
-      name,
-      amount,
-      collateral,
-      duration,
-      description,
-      ongoing:true
+      name: "",
+      amount : 0,
+      collateral: "",
+      duration: "",
+      description: "",
     }
     handlePost(new_contract)
   }
+
+
     return (
       <div className="App">
         {errors?errors.map(e => <div>{e}</div>):null}
