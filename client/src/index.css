@@ -481,6 +481,52 @@ section {
 }
 
 /* LENDERS PAGE */
-.lender-card {
-  background-color: red;
+.lender-card{
+  float: left;
+  width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px 5px 5px 10px;
+  height: 290px;
+  border-radius: 15px;
+  background-color: rgb(189, 192, 204);
+}
+
+.lender-card:hover{
+  transform: translateY(-0.75px);
+  box-shadow: 4px 6px 15px -1px rgba(0,0,0,0.15);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  mix-blend-mode: unset;
+}
+
+.lender-card:active{
+  transform: translateY(-1px);
+  box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
+  opacity: 0.8;
+}
+
+#jpmorgan-card {
+  background-color: rgb(118, 136, 202);
+}
+
+#canadia-card {
+  background-color: rgb(214, 81, 81);
+}
+
+#canadia-card img {
+
+}
+
+#capitaltwo-card {
+  background-color: rgb(33, 62, 168);
+}
+
+#silverman-card {
+  background-color: rgb(165, 169, 182);
+}
+
+#ttbank-card {
+  background-color: rgb(91, 180, 98);
 }
