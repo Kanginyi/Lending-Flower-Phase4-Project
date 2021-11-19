@@ -24,6 +24,7 @@ class ContractsController < ApplicationController
     end
 
     def create
+        
         new_contract = Contract.create(contract_params)
         if new_contract.valid?
             render json: new_contract, status: :created
@@ -45,7 +46,7 @@ class ContractsController < ApplicationController
     private
     
     def contract_params
-        params.permit(:amount, :description, :collateral, :duration, :lender_id, :lendee_id)
+        params.permit(:amount, :description, :collateral, :duration, :interest_rate, :lender_id, :lendee_id)
     end
 end
 

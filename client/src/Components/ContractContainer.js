@@ -34,8 +34,8 @@ function ContractContainer() {
 
   return (
     <>
-    <ContractForm addNewContract={addNewContract} />
-    <div>{showContracts}</div>
+      <ContractForm addNewContract={addNewContract} />
+      <div>{showContracts}</div>
     </>
   );
 }

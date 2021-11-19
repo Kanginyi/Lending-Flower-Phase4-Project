@@ -6,19 +6,18 @@ function ContractForm({ addNewContract }) {
   const [duration, setDuration] = useState(0);
   const [interest, setInterest] = useState(0);
   const [description, setDescription] = useState("");
-  const [lenders, setLenders] = useState("");
+  const [lender, setLender] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
 
     const newContractObj = {
       amount: amount,
-      interestRate: interest,
       duration: duration,
       amount: amount,
       description: description,
-      lender: { lender: { name: lenders }}
-      // lender: lenderId,
+      // lender: { lender: { name: lenders } },
+      lender: lender,
       // lendee_id: lendeeId,
       // lender: {
       //   name: lenderName,
@@ -28,13 +27,15 @@ function ContractForm({ addNewContract }) {
       // },
     };
     // console.log(newContract);
+    console.log(newContractObj);
+    console.log();
 
     fetch("/contracts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(addNewContract),
+      body: JSON.stringify(newContractObj),
     })
       .then((response) => response.json())
       .then((newContract) => {
@@ -68,7 +69,7 @@ function ContractForm({ addNewContract }) {
           />
         </label>
         <br />
-        <label>
+        {/* <label>
           Interest Rate
           <input
             type="number"
@@ -77,7 +78,7 @@ function ContractForm({ addNewContract }) {
             value={interest}
             onChange={(e) => setInterest(e.target.value)}
           />
-        </label>
+        </label> */}
         <br />
         <label>
           Duration
@@ -101,7 +102,7 @@ function ContractForm({ addNewContract }) {
           />
         </label>
         <br />
-        <select onChange={(e) => setLenders(e.target.value)}>
+        <select onChange={(e) => setLender(e.target.value)}>
           <option value="none">Select a Lender</option>
           <option value="jpMorgan">JP Morgan Pursue</option>
           <option value="canadia">Bank of Canadia</option>
@@ -109,7 +110,7 @@ function ContractForm({ addNewContract }) {
           <option value="silverman">Silverman Sucks</option>
           <option value="ttBank">TT Bank</option>
         </select>
-        <br/>
+        <br />
         <button type="submit">Add Contract</button>
       </form>
     </div>
@@ -117,8 +118,6 @@ function ContractForm({ addNewContract }) {
 }
 
 export default ContractForm;
-
-
 
 // import React from 'react';
 
