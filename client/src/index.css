@@ -370,7 +370,7 @@ section {
   left: -40%;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.1); /* change to 0.6*/
+  background: rgba(255, 255, 255, 0.3);
   pointer-events: none;
   transform: skewX(-15deg);
 }
@@ -401,7 +401,7 @@ section {
   position: relative;
   width: 100%;
   height: 40px;
-  color: black;
+  color: rgb(23, 39, 134);
 }
 
 .container .row100 .col .inputBox input,
@@ -416,7 +416,7 @@ section {
   font-size: 15px;
   padding: 0 10px;
   z-index: 1;
-  color: black;
+  color: rgb(23, 39, 134);
 }
 
 .container .row100 .col .inputBox .text {
@@ -429,6 +429,55 @@ section {
   display: block;
   transition: 0.5s;
   pointer-events: none;
+}
+
+.container .row100 .col .inputBox input:focus + .text,
+.container .row100 .col .inputBox input:valid + .text,
+.container .row100 .col .inputBox textarea:focus + .text,
+.container .row100 .col .inputBox textarea:valid + .text  {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .col .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .row100 .col .inputBox input:focus ~ .line, 
+.container .row100 .col .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.container .row100 .col .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.container .row100 .col .inputBox textarea:focus ~ .line, 
+.container .row100 .col .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.container .row100 .col input[type="submit"] {
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  color: rgb(23, 39, 134);
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 2px;
 }
 
 /* LENDERS PAGE */
