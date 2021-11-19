@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #dae6dc;
-  /* background-image: url("https://i.imgur.com/OWgjztn.png"); 25 font */
   background-image: url("https://i.imgur.com/NVKJ21J.png");
   background-size: cover;
   box-sizing: border-box;
@@ -227,7 +226,6 @@ code {
 }
 
 #homepage-welcome {
-  /* color: rgb(18, 122, 18); */ /* This one is a green color*/
   color:rgb(23, 39, 134);
   font-family: 'Cinzel', serif;
   text-decoration: underline;
@@ -237,11 +235,6 @@ code {
   font-family: 'Cormorant Garamond', serif;
   font-size: 40px;
 }
-
-/* #homepage-paras-div {
-  border: 3px black double;
-  width: 700px;
-} */
 
 .homepage-paras {
   font-size: 24px;
@@ -353,11 +346,7 @@ code {
     opacity: 0.8;
 }
 
-/* CONTACT US */
-.contact-links{
-  text-decoration: none;
-}
-
+/* NEW CONTRACT FORM */
 section {
   display: flex;
   justify-content: center;
@@ -659,3 +648,89 @@ section {
   box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
   opacity: 0.8;
 }
+
+/* CONTACT US PAGE */
+.contact-links{
+  text-decoration: none;
+}
+
+#contact-page-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  width: 300px;
+  height: 300px;
+  background: rgba(56, 189, 56, 0.8);
+}
+
+#kevin-lutz {
+  border-radius: 5px 50% 25px 50%;
+  box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
+}
+
+#eric-yi {
+  border-radius: 50% 5px 50% 25px;
+  box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
+}
+
+
+
+/* 
+.container {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  max-width: 1000px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  transform: skewX(-15deg);
+} */
+
+/* .contact-leaf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  background: rgba(56, 189, 56);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+  color: rgb(23, 39, 134);
+} */
