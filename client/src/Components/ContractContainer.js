@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ContractCard from "./ContractCards";
+import ContractForm from "./ContractForm";
 
 function ContractContainer() {
   const [contractList, setContractList] = useState([]);
@@ -32,8 +33,10 @@ function ContractContainer() {
   ));
 
   return (
+    <>
     <ContractForm addNewContract={addNewContract} />
-    <div>{showContracts}</div>;
+    <div>{showContracts}</div>
+    </>
   );
 }
 

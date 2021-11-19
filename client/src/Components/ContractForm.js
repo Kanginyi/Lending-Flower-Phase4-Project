@@ -6,33 +6,35 @@ function ContractForm({ addNewContract }) {
   const [duration, setDuration] = useState(0);
   const [interest, setInterest] = useState(0);
   const [description, setDescription] = useState("");
+  const [lenders, setLenders] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
 
     const newContractObj = {
       amount: amount,
-      interest_rate: interest_rate,
+      interestRate: interest,
       duration: duration,
       amount: amount,
       description: description,
-      lender: lenderId,
-      lendee_id: lendeeId,
-      lender: {
-        name: lenderName,
-      },
-      lendee: {
-        name: lendeeName,
-      },
+      lender: { lender: { name: lenders }}
+      // lender: lenderId,
+      // lendee_id: lendeeId,
+      // lender: {
+      //   name: lenderName,
+      // },
+      // lendee: {
+      //   name: lendeeName,
+      // },
     };
     // console.log(newContract);
 
-    fetch("http://localhost:3000/contracts", {
+    fetch("/contracts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newContract),
+      body: JSON.stringify(addNewContract),
     })
       .then((response) => response.json())
       .then((newContract) => {
@@ -99,6 +101,15 @@ function ContractForm({ addNewContract }) {
           />
         </label>
         <br />
+        <select onChange={(e) => setLenders(e.target.value)}>
+          <option value="none">Select a Lender</option>
+          <option value="jpMorgan">JP Morgan Pursue</option>
+          <option value="canadia">Bank of Canadia</option>
+          <option value="capitalTwo">Capital Two</option>
+          <option value="silverman">Silverman Sucks</option>
+          <option value="ttBank">TT Bank</option>
+        </select>
+        <br/>
         <button type="submit">Add Contract</button>
       </form>
     </div>
@@ -106,6 +117,8 @@ function ContractForm({ addNewContract }) {
 }
 
 export default ContractForm;
+
+
 
 // import React from 'react';
 
