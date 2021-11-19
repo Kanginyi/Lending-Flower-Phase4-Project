@@ -1,23 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ContractCard from "./ContractCards";
 
 function ContractContainer({contractList}) {
-  // const [contractList, setContractList] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("/contracts")
-  //     .then((resp) => resp.json())
-  //     .then((data) => {
-  //       if (data.length > 0) {
-  //         setContractList(data);
-  //       }
-  //     });
-  // }, []);
-
-  // const addNewContract = (newContractObj) => {
-  //   setContractList((data) => [...data, newContractObj]);
-  // };
-
   const showContracts = contractList?.map((contract) => (
     <ContractCard
       key={contract.id}
