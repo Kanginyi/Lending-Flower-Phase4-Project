@@ -14,6 +14,10 @@ function ContractContainer() {
       });
   }, []);
 
+  const addNewContract = (newContractObj) => {
+    setContractList((data) => [...data, newContractObj]);
+  };
+
   const showContracts = contractList?.map((contract) => (
     <ContractCard
       key={contract.id}
@@ -27,15 +31,10 @@ function ContractContainer() {
     />
   ));
 
-  return <div>
-          {showContracts}
-         </div>;
+  return (
+    <ContractForm addNewContract={addNewContract} />
+    <div>{showContracts}</div>;
+  );
 }
 
 export default ContractContainer;
-
-//Line 17 - nice - what does the question mark do
-
-//do we need a form to create a new contract?
-
-//if so, do we need a drop down bar for lendees to select a lender

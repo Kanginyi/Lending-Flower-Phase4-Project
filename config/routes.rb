@@ -6,7 +6,12 @@ Rails.application.routes.draw do
 
   # Login Session, Create is the login action, Destroy is the logout action
   # resources :sessions, only: [:create, :destroy]
-  delete '/logout', to: 'sessions#destroy'
+  
+  post "/signup", to: "users#create"
+  get "/me", to: "users#show"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+
   # Users actions
   resources :users
   # Routing logic: fallback requests for React Router.
