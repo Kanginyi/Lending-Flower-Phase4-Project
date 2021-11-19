@@ -18,6 +18,7 @@ function Lenders() {
   const capitalTwo = lendersData[2];
   const silverman = lendersData[3];
   const ttBank = lendersData[4];
+  console.log(lendersData);
 
   return (
     <div>
