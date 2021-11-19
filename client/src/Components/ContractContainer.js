@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from "react";
 import ContractCard from "./ContractCards";
-import ContractForm from "./ContractForm";
 
-function ContractContainer() {
-  const [contractList, setContractList] = useState([]);
+function ContractContainer({contractList}) {
+  // const [contractList, setContractList] = useState([]);
 
-  useEffect(() => {
-    fetch("/contracts")
-      .then((resp) => resp.json())
-      .then((data) => {
-        if (data.length > 0) {
-          setContractList(data);
-        }
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("/contracts")
+  //     .then((resp) => resp.json())
+  //     .then((data) => {
+  //       if (data.length > 0) {
+  //         setContractList(data);
+  //       }
+  //     });
+  // }, []);
 
-  const addNewContract = (newContractObj) => {
-    setContractList((data) => [...data, newContractObj]);
-  };
+  // const addNewContract = (newContractObj) => {
+  //   setContractList((data) => [...data, newContractObj]);
+  // };
 
   const showContracts = contractList?.map((contract) => (
     <ContractCard
@@ -34,7 +33,6 @@ function ContractContainer() {
 
   return (
     <>
-      <ContractForm addNewContract={addNewContract} />
       <div>{showContracts}</div>
     </>
   );
