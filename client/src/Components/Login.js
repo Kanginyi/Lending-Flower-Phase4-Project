@@ -25,20 +25,23 @@ function Login() {
         })
             .then(resp => resp.json())
             .then(navigate("../", {replace: true}))
+
+        alert("Welcome!");
     }
 
     return (
-        <div>
-            <h1>Lending Breeze</h1>
-
+        <div id="login-div">
             <form id="form-flex">
-                <span className="login-text-bold">Username:</span>
-                <input onChange={e => handleInputChange(e, "username")} type="text" name="username" /><br/>
-                <span className="login-text-bold">Password:</span>
-                <input onChange={e => handleInputChange(e, "password")} type="password" name="password" />
-                <br/>
-                <button onClick={handleLogin}>Login</button><br/>
-                <button>Signup</button>
+                <h2>Lending Breeze <img src="https://i.imgur.com/91ZrLfL.png" alt="Lending Tree/Breeze Logo" title="Welcome to Lending Breeze" width="22px"/></h2>               
+                <div>
+                <div className="login-text-bold">Username:</div>
+                <input onChange={e => handleInputChange(e, "username")} type="text" name="username" required="required"/>
+                </div><br/>
+                <div>
+                <div className="login-text-bold">Password:</div>
+                <input onChange={e => handleInputChange(e, "password")} type="password" name="password" required="required"/>
+                </div><br/>
+                <button type="submit" onClick={handleLogin}>Login</button><br/>
             </form>
         </div>
     );
