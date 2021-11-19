@@ -654,6 +654,14 @@ section {
   text-decoration: none;
 }
 
+.contact-div a{
+  color: white;
+}
+
+.contact-div a:hover {
+  color: rgb(23, 39, 134);
+}
+
 #contact-page-div {
   display: flex;
   justify-content: center;
@@ -677,6 +685,11 @@ section {
 #kevin-lutz {
   border-radius: 5px 50% 25px 50%;
   box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
+}
+
+#kevin-lutz ul{
+  margin-right: 20px;
+  text-align: right;
 }
 
 #eric-yi {
