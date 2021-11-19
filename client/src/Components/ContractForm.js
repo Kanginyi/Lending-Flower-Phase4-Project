@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router";
 
 function ContractForm({ handlePost }) {
   const [lender, setLender] = useState("");
@@ -10,6 +11,8 @@ function ContractForm({ handlePost }) {
     lender_id: "",
     lendee_id: 8
   });
+
+  let navigate = useNavigate();
 
   const handleChange = (e) => {
     setNewContract({...newContract, [e.target.name]:e.target.value});
@@ -26,7 +29,7 @@ function ContractForm({ handlePost }) {
 
     handlePost(newContract);
 
-    alert("Your contract has been posted")
+    navigate("/contracts", {replace: true});
   }
 
   return (
