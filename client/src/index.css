@@ -236,9 +236,22 @@ code {
   font-size: 40px;
 }
 
+#homepage-paras-overall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.homepage-para-divs {
+  border: black solid 1px;
+  width: 40%;
+}
+
 .homepage-paras {
   font-size: 24px;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* LOGIN FORM */
@@ -663,7 +676,7 @@ section {
 }
 
 .contact-div a:hover {
-  color: rgb(23, 39, 134);
+  color: rgb(219, 243, 0);
 }
 
 #contact-page-div {
