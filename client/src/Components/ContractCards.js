@@ -12,8 +12,8 @@ function ContractCard({
 
   return (
     <div className="contract-card">
-      <h3 className="contract-lender">Lender: {lender}</h3>
-      <h3 className="contract-lendee">Lendee: {lendee}</h3>
+      <h3 className="contract-lender">Lender: <span className="contract-lender-text">{lender}</span></h3>
+      <h3 className="contract-lendee">Lendee: <span className="contract-lendee-text">{lendee}</span></h3>
 
       <p><strong>Amount:</strong> ${amount}</p>
       <p><strong>Interest Rate:</strong> {interestRate}%</p>
