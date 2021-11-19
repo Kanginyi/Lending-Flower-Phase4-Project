@@ -71,7 +71,7 @@ function ContractForm({ handlePost }) {
             <div className="col">
                 <div className="inputBox">
                 <input
-                  type="text"
+                  type="number"
                   name="duration"
                   required="required"
                   value={newContract.duration}
