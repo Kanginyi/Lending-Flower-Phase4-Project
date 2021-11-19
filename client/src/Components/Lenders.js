@@ -43,7 +43,7 @@ function Lenders() {
         <p>Description: Student Loan</p>
       </div>
       <div className="lender-card" id="ttbank-card">
-        <h3><span><img src="" /></span>{ttBank?.name}</h3>
+        <h3><span><img src="https://data.whicdn.com/images/275603802/original.gif" /></span>{ttBank?.name}</h3>
         <h4>Current Interest Rate: {ttBank?.interest_rate}%</h4>
         <p>Description: Auto Loan</p>
       </div>
