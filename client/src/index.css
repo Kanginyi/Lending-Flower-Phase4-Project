@@ -283,7 +283,7 @@ code {
 }
 
 #form-flex button {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 5px 20px;
   cursor: pointer;
   outline: none;
