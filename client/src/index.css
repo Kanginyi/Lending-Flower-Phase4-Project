@@ -510,14 +510,14 @@ section {
   cursor: pointer;
   outline: none;
   background: white;
-  color: rgb(23, 39, 134);
+  color: rgba(23, 39, 134, 0.8);
   font-weight: 600;
   font-size: 18px;
   border-radius: 2px;
 }
 
 .container .row100 .col button:active {
-  background-color: rgb(188, 188, 207);
+  background-color: rgb(228, 228, 240);
   color: rgba(23, 39, 134, 0.7);
 }
 
