@@ -15,12 +15,12 @@ function ContractCard({
       <h3 className="contract-lender">Lender: {lender}</h3>
       <h3 className="contract-lendee">Lendee: {lendee}</h3>
 
-      <p>Amount: ${amount}</p>
-      <p>Interest Rate: {interestRate}%</p>
-      <p>Duration: {duration} Days</p>
+      <p><strong>Amount:</strong> ${amount}</p>
+      <p><strong>Interest Rate:</strong> {interestRate}%</p>
+      <p><strong>Duration:</strong> {duration} Days</p>
 
-      <p>Description: {description}</p>
-      <p>Collateral: {collateral}</p>
+      <p><strong>Description:</strong> {description}</p>
+      <p><strong>Collateral:</strong> {collateral}</p>
     </div>
   );
 }
