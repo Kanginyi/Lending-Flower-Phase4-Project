@@ -75,7 +75,7 @@ function Lenders() {
 
       <div className="lender-card" id="ttbank-card">
         <div className="lender-image-div">
-          <img src="https://data.whicdn.com/images/275603802/original.gif"/>
+          <img src="https://data.whicdn.com/images/275603802/original.gif" alt="Random TT pink logo" title="TT Bank"/>
         </div>
         <div className="lender-description-div" id="ttbank-text">
           <h3>{ttBank?.name}</h3>
@@ -90,5 +90,3 @@ function Lenders() {
 }
 
 export default Lenders;
-
-<span><img src="" /></span>
