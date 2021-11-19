@@ -245,10 +245,11 @@ code {
   align-items: center; */
 }
 
-.homepage-para-divs {
+/* BING BONG BING BONG */
+/* .homepage-para-divs {
   border: black solid 1px;
   width: 40%;
-}
+} */
 
 .homepage-paras {
   font-size: 24px;
@@ -335,7 +336,6 @@ code {
   
 }
 
-
 /*CONTRACT CARD*/
 .contract-card{
     float: left;
@@ -362,6 +362,15 @@ code {
     box-shadow: 4px 6px 8px -1px rgba(0,0,0,0.65);
     opacity: 0.8;
 }
+
+/* .contract-lender-text {
+  color: rgb(212, 4, 4)
+}
+
+.contract-lendee-text {
+  color: rgb(57, 34, 139);
+} */
+
 
 /* NEW CONTRACT FORM */
 section {
