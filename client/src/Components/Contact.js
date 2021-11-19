@@ -42,7 +42,7 @@ function Contact() {
                 <div className="row100">
                     <div className="col">
                         <div className="inputBox textarea">
-                            <textarea required="required"></textarea>
+                            <textarea style={{resize: "none"}} required="required"></textarea>
                             <span className="text">Type Your Message Here</span>
                             <span className="line"></span>
                         </div>
