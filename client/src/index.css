@@ -498,6 +498,16 @@ section {
   text-align: center;
 }
 
+#new-contract-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-contract-button button {
+  border-radius: 6px;
+}
+
 .container .row100 .col button {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 40px;

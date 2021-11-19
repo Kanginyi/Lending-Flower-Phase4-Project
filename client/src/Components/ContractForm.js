@@ -107,7 +107,7 @@ function ContractForm({ handlePost }) {
         </div>
 
         <div className="row100">
-          <div className="col">
+          <div id="new-contract-button" className="col">
             <button type="submit">Create Contract</button>
           </div>
         </div>
