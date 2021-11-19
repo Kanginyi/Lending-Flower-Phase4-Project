@@ -271,6 +271,10 @@ code {
   color: rgb(23, 39, 134);
 }
 
+#form-flex img {
+  border-radius: 50% 0px 50% 5px;
+}
+
 #form-flex input {
   color: rgb(23, 39, 134);
 }
